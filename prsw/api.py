@@ -27,6 +27,7 @@ class Output:
         process_time: Optional[int] = 0,
         server_id: Optional[str] = "",
         build_version: Optional[str] = "",
+        pipeline: Optional[str] = "",
         status: Optional[str] = "",
         status_code: Optional[int] = 0,
         time: Optional[str] = "",
@@ -46,6 +47,7 @@ class Output:
             self.process_time = int(process_time)
             self.server_id = str(server_id)
             self.build_version = str(build_version)
+            self.pipeline = str(pipeline)
             self.status = str(status)
             self.status_code = int(status_code)
             self.time = datetime.datetime.fromisoformat(time)
