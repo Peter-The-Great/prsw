@@ -19,6 +19,7 @@ class TestApi(UnitTest):
         "process_time": 0,
         "server_id": "",
         "build_version": "",
+        "pipeline": "1014856",
         "status": "ok",
         "status_code": 200,
         "time": "2021-04-14T14:16:02.142290",
