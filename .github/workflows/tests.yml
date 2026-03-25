@@ -24,13 +24,13 @@ jobs:
       matrix:
         os: [macOS-latest, ubuntu-latest, windows-latest]
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v6
 
-    - uses: actions/setup-python@v4
+    - uses: actions/setup-python@v6
       with:
         python-version: 3.x
 
-    - uses: actions/cache@v3
+    - uses: actions/cache@v5
       with:
         key: v0-${{ runner.os }}-pip-test-${{ hashFiles('setup.py') }}
         path: ~/.cache/pip
@@ -53,13 +53,13 @@ jobs:
       matrix:
         python-version: [3.7, 3.8, 3.9]
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v6
 
-    - uses: actions/setup-python@v4
+    - uses: actions/setup-python@v6
       with:
         python-version: ${{ matrix.python-version }}
 
-    - uses: actions/cache@v3
+    - uses: actions/cache@v5
       with:
         key: v0-${{ runner.os }}-pip-test-${{ hashFiles('setup.py') }}
         path: ~/.cache/pip
