@@ -16,8 +16,8 @@ class Output:
     def __init__(
         self,
         _url,
-        messages: Optional[list] = None,
-        see_also: Optional[list] = None,
+        messages: Optional[list] = [],
+        see_also: Optional[list] = [],
         version: Optional[str] = "",
         data_call_status: Optional[str] = "",
         data_call_name: Optional[str] = "",
@@ -30,6 +30,7 @@ class Output:
         status: Optional[str] = "",
         status_code: Optional[int] = 0,
         time: Optional[str] = "",
+        pipeline: Optional[str] = "",
         **extra_fields,
     ):
         """Initialize the Output object."""
@@ -49,7 +50,8 @@ class Output:
             self.build_version = str(build_version)
             self.status = str(status)
             self.status_code = int(status_code)
-            self.time = datetime.datetime.fromisoformat(time) if time else None
+            self.time = datetime.datetime.fromisoformat(time)
+            self.pipeline = str(pipeline)
 
             for key, value in extra_fields.items():
                 setattr(self, key, value)
