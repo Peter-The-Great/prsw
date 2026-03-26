@@ -27,17 +27,18 @@ class Output:
         process_time: Optional[int] = 0,
         server_id: Optional[str] = "",
         build_version: Optional[str] = "",
-        pipeline: Optional[str] = "",
         status: Optional[str] = "",
         status_code: Optional[int] = 0,
         time: Optional[str] = "",
+        pipeline: Optional[str] = "",
+        **extra_fields,
     ):
         """Initialize the Output object."""
         self._url = _url
 
         if status_code == 200:
-            self.messages = messages
-            self.see_also = see_also
+            self.messages = messages or []
+            self.see_also = see_also or []
             self.version = str(version)
             self.data_call_status = str(data_call_status)
             self.data_call_name = str(data_call_name)
@@ -47,10 +48,13 @@ class Output:
             self.process_time = int(process_time)
             self.server_id = str(server_id)
             self.build_version = str(build_version)
-            self.pipeline = str(pipeline)
             self.status = str(status)
             self.status_code = int(status_code)
             self.time = datetime.datetime.fromisoformat(time)
+            self.pipeline = str(pipeline)
+
+            for key, value in extra_fields.items():
+                setattr(self, key, value)
         else:
             raise ResponseError("Invalid response from API")
 
@@ -61,7 +65,6 @@ def get(path, params=None):
     params = "&".join("{}={}".format(k, v) for k, v in params.items())
 
     url = f"{API_URL}{str(path)}/data.json?{str(params)}"
-
     try:
         response = requests.get(url)
         response.raise_for_status()
