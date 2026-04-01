@@ -5,7 +5,7 @@ description = "Python RIPE Stat Wrapper"
 keywords = ["RIPE", "RIPEStat"]
 license = "BSD-2-Clause"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 classifiers = [
     "Environment :: Console",
     "Intended Audience :: Developers",
@@ -13,14 +13,13 @@ classifiers = [
     "Operating System :: OS Independent",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Topic :: Utilities",
 ]
 dependencies = [
-    "requests>=2.32.4",
+    "requests>=2.33.0",
 ]
 
 [dependency-groups]
