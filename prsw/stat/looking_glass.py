@@ -1,7 +1,6 @@
 """Provides the Looking Glass endpoint."""
 
 import ipaddress
-
 from collections import namedtuple
 from datetime import datetime
 

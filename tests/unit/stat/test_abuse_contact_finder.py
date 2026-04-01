@@ -1,14 +1,15 @@
 """Test prsw.stat.abuse_contact_finder."""
 
 import ipaddress
-import pytest
 from datetime import datetime
 from unittest.mock import patch
 
-from .. import UnitTest
+import pytest
 
 from prsw.api import API_URL, Output
 from prsw.stat.abuse_contact_finder import AbuseContactFinder
+
+from .. import UnitTest
 
 
 class TestAbuseContactFinder(UnitTest):

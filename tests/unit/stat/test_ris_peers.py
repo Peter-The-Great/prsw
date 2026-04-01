@@ -1,15 +1,16 @@
 """Test prsw.stat.ris_peers."""
 
-import pytest
 from datetime import datetime
 from ipaddress import IPv4Address
 from typing import Iterable
 from unittest.mock import patch
 
-from .. import UnitTest
+import pytest
 
 from prsw.api import API_URL, Output
 from prsw.stat.ris_peers import RISPeers
+
+from .. import UnitTest
 
 
 class TestRISPeers(UnitTest):

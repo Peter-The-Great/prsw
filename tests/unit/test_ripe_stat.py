@@ -1,7 +1,6 @@
-import pytest
 from unittest import mock
 
-from . import UnitTest
+import pytest
 
 from prsw import RIPEstat
 from prsw.stat.abuse_contact_finder import AbuseContactFinder
@@ -14,6 +13,8 @@ from prsw.stat.ris_peers import RISPeers
 from prsw.stat.routing_history import RoutingHistory
 from prsw.stat.rpki_validation_status import RPKIValidationStatus
 from prsw.stat.whats_my_ip import WhatsMyIp
+
+from . import UnitTest
 
 
 class TestRIPEstat(UnitTest):

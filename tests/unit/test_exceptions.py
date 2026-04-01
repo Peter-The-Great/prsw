@@ -1,8 +1,8 @@
 import pytest
 
-from . import UnitTest
-
 from prsw.exceptions import PRSWException, RequestError, ResponseError
+
+from . import UnitTest
 
 
 class TestPRSWException(UnitTest):

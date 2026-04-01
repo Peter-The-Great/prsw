@@ -1,7 +1,6 @@
 """Provides the Routing History endpoint."""
 
 import ipaddress
-
 from collections import namedtuple
 from datetime import datetime
 from typing import Optional
