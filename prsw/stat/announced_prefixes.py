@@ -1,7 +1,6 @@
 """Provides the Announced Prefixes endpoint."""
 
 import ipaddress
-
 from collections import namedtuple
 from datetime import datetime
 from typing import Optional

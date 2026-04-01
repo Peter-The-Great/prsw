@@ -1,14 +1,15 @@
 """Test prsw.api.looking_glass."""
 
-import pytest
 from datetime import datetime
 from typing import Iterable
 from unittest.mock import patch
 
-from .. import UnitTest
+import pytest
 
 from prsw.api import API_URL, Output
 from prsw.stat.looking_glass import LookingGlass
+
+from .. import UnitTest
 
 
 class TestLookingGlass(UnitTest):

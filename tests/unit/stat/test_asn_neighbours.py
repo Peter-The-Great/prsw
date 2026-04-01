@@ -1,15 +1,16 @@
 """Test prsw.stat.asn_neighbours."""
 
-import pytest
 from copy import deepcopy
 from datetime import datetime
 from typing import Iterable
 from unittest.mock import patch
 
-from .. import UnitTest
+import pytest
 
 from prsw.api import API_URL, Output
 from prsw.stat.asn_neighbours import ASNNeighbours
+
+from .. import UnitTest
 
 
 class TestASNNeighbours(UnitTest):

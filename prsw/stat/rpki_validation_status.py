@@ -1,7 +1,6 @@
 """Provides the RPKI Validation Status endpoint."""
 
 import ipaddress
-
 from collections import namedtuple
 
 from prsw.validators import Validators

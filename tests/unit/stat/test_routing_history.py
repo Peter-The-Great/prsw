@@ -1,15 +1,16 @@
 """Test prsw.stat.routing_history."""
 
-import pytest
 import ipaddress
 from datetime import datetime
 from typing import Iterable
 from unittest.mock import patch
 
-from .. import UnitTest
+import pytest
 
 from prsw.api import API_URL, Output
 from prsw.stat.routing_history import RoutingHistory
+
+from .. import UnitTest
 
 
 class TestRoutingHistory(UnitTest):

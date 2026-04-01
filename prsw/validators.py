@@ -1,7 +1,6 @@
 """Provides validators for init arguments in API endpoint classes."""
 
 import ipaddress
-
 from datetime import datetime
 
 

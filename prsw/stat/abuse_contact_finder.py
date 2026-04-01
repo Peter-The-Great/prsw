@@ -1,7 +1,6 @@
 """Provides the Abuse Contact Finder endpoint."""
 
 import ipaddress
-
 from datetime import datetime
 
 from prsw.validators import Validators

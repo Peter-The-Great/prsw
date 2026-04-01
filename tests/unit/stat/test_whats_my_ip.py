@@ -1,13 +1,14 @@
 """Test prsw.stat.whats_my_ip."""
 
-import pytest
 from ipaddress import IPv6Address
 from unittest.mock import patch
 
-from .. import UnitTest
+import pytest
 
 from prsw.api import API_URL, Output
 from prsw.stat.whats_my_ip import WhatsMyIp
+
+from .. import UnitTest
 
 
 class TestWhatsMyIp(UnitTest):
