@@ -5,7 +5,7 @@ description = "Python RIPE Stat Wrapper"
 keywords = ["RIPE", "RIPEStat"]
 license = "BSD-2-Clause"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.9"
 classifiers = [
     "Environment :: Console",
     "Intended Audience :: Developers",
