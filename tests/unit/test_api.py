@@ -1,10 +1,11 @@
-import pytest
 from unittest import mock
 
-from . import UnitTest
+import pytest
 
-from prsw.api import get, Output, API_URL
+from prsw.api import API_URL, Output, get
 from prsw.exceptions import RequestError, ResponseError
+
+from . import UnitTest
 
 
 class TestApi(UnitTest):

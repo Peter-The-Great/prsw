@@ -3,8 +3,9 @@
 import datetime
 import ipaddress
 
-from . import UnitTest
 from prsw.validators import Validators
+
+from . import UnitTest
 
 
 class TestValidators(UnitTest):

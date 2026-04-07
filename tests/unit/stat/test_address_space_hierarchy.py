@@ -1,15 +1,16 @@
 """Test prsw.stat.address_space_hierarchy."""
 
-import pytest
 import ipaddress
 from datetime import datetime
 from typing import Iterable
 from unittest.mock import patch
 
-from .. import UnitTest
+import pytest
 
 from prsw.api import API_URL, Output
 from prsw.stat.address_space_hierarchy import AddressSpaceHierarchy
+
+from .. import UnitTest
 
 
 class TestAddressSpaceHierarchy(UnitTest):

@@ -12,7 +12,11 @@ _build/
 __pycache__/
 build/
 dist/
+coverage.xml
 
 # common venv idioms
 .venv/
 venv/
+
+# python
+.python-version

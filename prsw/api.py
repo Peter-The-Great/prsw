@@ -1,9 +1,9 @@
 """Base RIPEstat API interactions."""
 
 import datetime
-import requests
-
 from typing import Optional
+
+import requests
 
 from .exceptions import RequestError, ResponseError
 

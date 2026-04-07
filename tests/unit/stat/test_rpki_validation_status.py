@@ -1,14 +1,15 @@
 """Test prsw.stat.rpki_validation_status."""
 
-import pytest
 from ipaddress import IPv4Network
 from typing import Iterable
 from unittest.mock import patch
 
-from .. import UnitTest
+import pytest
 
 from prsw.api import API_URL, Output
 from prsw.stat.rpki_validation_status import RPKIValidationStatus
+
+from .. import UnitTest
 
 
 class TestRPKIValidationStatus(UnitTest):

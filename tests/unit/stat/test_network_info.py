@@ -1,14 +1,15 @@
 """Test prsw.stat.network_info."""
 
-import pytest
 from ipaddress import IPv4Network
 from typing import Iterable
 from unittest.mock import patch
 
-from .. import UnitTest
+import pytest
 
 from prsw.api import API_URL, Output
 from prsw.stat.network_info import NetworkInfo
+
+from .. import UnitTest
 
 
 class TestNetworkInfo(UnitTest):
